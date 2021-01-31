@@ -21,11 +21,30 @@ Run the following commands to generate train/test/val dataset.
 python generate_npy_data.py  --filename=data/PEMS08/PEMS08.npz  --output_dir=data/PEMS08
 
 # electricity
-python generate_txt_data.py  --filename=data/electricity/electricity.npz  --output_dir=data/electricity
+python generate_txt_data.py  --filename=data/electricity.txt  --output_dir=data/electricity
 ```
 
-## Model Training
+## Model Training  
+
 * PMES03  
-`python train.py --data pems03`
+`python train.py --dataset pems03 --seq_len 12 --mum_nodes 358 range_size 20 --n_layers 3 `
+
+* PMES04  
+`python train.py --dataset pems04 --seq_len 12 --mum_nodes 307 range_size 20 --n_layers 3 `
+
+* PMES07  
+`python train.py --dataset pems07 --seq_len 12 --mum_nodes 883 range_size 30 --n_layers 2 `
+
+* PMES08  
+`python train.py --dataset pems08 --seq_len 12 --mum_nodes 358 range_size 20 --n_layers 4 `
+
+
+* Electricity  
+`python train.py --dataset electricity --seq_len 24 --mum_nodes 321 range_size 20 --n_layers 3 `
+
+
+* Traffic
+`python train.py --dataset traffic --seq_len 24 --mum_nodes 862 range_size 30 --n_layers 2 `
+
 
 
