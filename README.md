@@ -43,7 +43,7 @@ python generate_txt_data.py  --filename=data/electricity.txt  --output_dir=data/
 `python train.py --dataset electricity --seq_len 24 --mum_nodes 321 range_size 20 --n_layers 3 `
 
 
-* Traffic
+* Traffic  
 `python train.py --dataset traffic --seq_len 24 --mum_nodes 862 range_size 30 --n_layers 2 `
 
 
