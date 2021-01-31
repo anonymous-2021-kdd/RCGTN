@@ -9,10 +9,10 @@ This is a PyTorch implement of the paper submitted to KDD2021.
 RCGTN is implemented on those several public datasets.
 
 ### Datasets with priori graph structure
-* Download PEMS03, PEMS04, PEMS07 and PEMS08 from [STSGCN](https://github.com/Davidham3/STSGCN). Uncompress data file using tar -zxvf data.tar.gz and move them into the data folder.
+* Download PEMS03, PEMS04, PEMS07 and PEMS08 from [STSGCN](https://github.com/Davidham3/STSGCN). Uncompress data files using tar -zxvf data.tar.gz and move them into the data folder.
 
 ### Datasets without priori graph structure
-* Download Traffic, Electricity datasets from https://github.com/laiguokun/multivariate-time-series-data. Uncompress data file using tar -zxvf data.tar.gz and move them into the data folder.
+* Download Traffic, Electricity datasets from https://github.com/laiguokun/multivariate-time-series-data. Uncompress data files using tar -zxvf data.tar.gz and move them into the data folder.
 
 Run the following commands to generate train/test/val dataset.
 
