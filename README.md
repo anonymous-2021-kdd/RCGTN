@@ -1,10 +1,16 @@
 # RCGTN
-This is s PyTorch implement of the paper: *Looking from Trend: Range Convolutional Graph Transformer Network for Multivariate Time Series Forecasting*
+This is a PyTorch implement of the paper submitted to KDD2021.
 
 ## Requirements
 * python3
 * see requirments.txt
 
 ## Data Preparation
+RCGTN is implemented on those several public traffic datasets.
 
-The model is implement using Python3 and Pytorch 
+### Datasets with priori graph structure
+* Download PEMS03, PEMS04, PEMS07 and PEMS08 from [STSGCN](https://github.com/Davidham3/STSGCN). Uncompress data file using tar -zxvf data.tar.gz and move them to the data folder.
+
+### Datasets without priori graph structure
+* Download Traffic, Electricity datasets from https://github.com/laiguokun/multivariate-time-series-data. Uncompress them and move them to the data folder.
+
