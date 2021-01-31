@@ -36,7 +36,7 @@ python generate_txt_data.py  --filename=data/electricity.txt  --output_dir=data/
 `python train.py --dataset pems07 --seq_len 12 --mum_nodes 883 range_size 30 --n_layers 2 `
 
 * PMES08  
-`python train.py --dataset pems08 --seq_len 12 --mum_nodes 358 range_size 20 --n_layers 4 `
+`python train.py --dataset pems08 --seq_len 12 --mum_nodes 170 range_size 10 --n_layers 4 `
 
 
 * Electricity  
