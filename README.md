@@ -18,10 +18,14 @@ Run the following commands to generate train/test/val dataset.
 
 ```
 #pems08
-python generate_npy_data.py 
+python generate_npy_data.py  --filename=data/PEMS08/PEMS08.npz  --output_dir=data/PEMS08
 
 # electricity
-python generate_txt_data.py
+python generate_txt_data.py  --filename=data/electricity/electricity.npz  --output_dir=data/electricity
 ```
+
+## Model Training
+* PMES03
+`python train.py --data pems03`
 
 
