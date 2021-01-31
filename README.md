@@ -25,7 +25,7 @@ python generate_txt_data.py  --filename=data/electricity/electricity.npz  --outp
 ```
 
 ## Model Training
-* PMES03
+* PMES03  
 `python train.py --data pems03`
 
 
