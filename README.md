@@ -17,10 +17,10 @@ RCGTN is implemented on those several public datasets.
 Run the following commands to generate train/test/val dataset.
 
 ```
-#pems08
+# PEMS08
 python generate_npy_data.py  --filename=data/PEMS08/PEMS08.npz  --output_dir=data/PEMS08
 
-# electricity
+# Electricity
 python generate_txt_data.py  --filename=data/electricity.txt  --output_dir=data/electricity
 ```
 
