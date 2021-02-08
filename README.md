@@ -1,4 +1,4 @@
-# RCGTN
+# Trendformer
 This is a PyTorch implement of the paper submitted to KDD2021.
 
 ## Requirements
@@ -6,7 +6,7 @@ This is a PyTorch implement of the paper submitted to KDD2021.
 * see requirments.txt
 
 ## Data Preparation
-RCGTN is implemented on those several public datasets.
+Trendformer is implemented on those several public datasets.
 
 ### Datasets with priori graph structure
 * Download PEMS03, PEMS04, PEMS07 and PEMS08 from [STSGCN](https://github.com/Davidham3/STSGCN). Uncompress data files using tar -zxvf data.tar.gz and move them into the data folder.
