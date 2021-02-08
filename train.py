@@ -7,7 +7,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 
-from model import RCGTN
+from model import Trendformer
 import numpy as np
 import pandas as pd
 
@@ -18,7 +18,7 @@ from torch.nn import init
 
 """
 dataset          traffic      electricity     pems03    pems04    pems07   pems08
-granularity      1hour         1hour           1hour     1hour    1hour    1hour
+sample_rate      1hour         1hour           1hour     1hour    1hour    1hour
 samples          17554         26304           358       307      883      170
 nodes            862           321             26208     16992    28224    17856
 """
@@ -35,7 +35,7 @@ parser.add_argument('--num_nodes',type=int,default=170,help='number of nodes')
 parser.add_argument('--range_size',type=int,default=10,help='range size for group_range attention')
 parser.add_argument('--batch_size',type=int,default=32,help='batch size')
 parser.add_argument('--n_layers',type=int,default=4,help='layers of encoder and decoder')
-parser.add_argument('--d_model',type=int,default=16,help='dimension of model')
+parser.add_argument('--d_model',type=int,default=24,help='dimension of model')
 parser.add_argument('--end_channels',type=int,default=64,help='end_channels')
 parser.add_argument('--learning_rate',type=float,default=0.001,help='learning rate')
 parser.add_argument('--dropout',type=float,default=0.3,help='dropout rate')
@@ -279,7 +279,7 @@ if __name__ == "__main__":
     dataloader = utils.load_dataset(args.data, args.batch_size, args.batch_size, args.batch_size)
 
 
-    model = RCGTN(
+    model = Trendformer(
         in_dim=args.in_dim, out_dim=args.out_dim, seq_len=args.seq_len, out_len=args.out_len, end_channels = args.end_channels,d_inner=args.d_model,
         en_layers=args.n_layers,  de_layers=args.n_layers, d_model=args.d_model,
         num_nodes=args.num_nodes, range_size=args.range_size, dropout=args.dropout,if_ffn=True
